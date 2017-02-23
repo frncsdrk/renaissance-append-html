@@ -1,0 +1,30 @@
+{
+  "name": "renaissance-append-html",
+  "version": "0.1.0",
+  "description": "renaissance append html drink",
+  "main": "appendHTML.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frncsdrk/renaissance-append-html.git"
+  },
+  "keywords": [
+    "renaissance",
+    "append",
+    "html",
+    "drink"
+  ],
+  "author": "frncsdrk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frncsdrk/renaissance-append-html/issues"
+  },
+  "homepage": "https://github.com/frncsdrk/renaissance-append-html#readme",
+  "dependencies": {
+    "renaissance": "^0.2.1",
+    "requirejs": "^2.3.3",
+    "requirejs-text": "^2.0.15"
+  }
+}
