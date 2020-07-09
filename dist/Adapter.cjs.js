@@ -1,5 +1,6 @@
+'use strict';
+
 // append html adapter
-"use strict";
 
 class AppendHtmlAdapter {
   constructor() {

@@ -2,8 +2,11 @@
   "name": "renaissance-append-html",
   "version": "0.1.1",
   "description": "renaissance append html adapter",
-  "main": "src/index.js",
+  "main": "dist/Adapter.cjs.js",
+  "module": "dist/Adapter.es.js",
   "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
     "test": "npm run test:raw | tap-spec",
     "test:nyc": "nyc npm test",
     "test:raw": "tape test/**/*.js"
@@ -25,7 +28,10 @@
   },
   "homepage": "https://github.com/frncsdrk/renaissance-append-html#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^7.0.0",
     "nyc": "^15.1.0",
+    "rollup": "^2.21.0",
     "tap-spec": "^5.0.0",
     "tape": "^5.0.1"
   },
