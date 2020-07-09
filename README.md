@@ -2,6 +2,18 @@
 
 renaissance appendHTML adapter
 
+## Usage
+
+```js
+const { r } = require('renaissance')
+const AppendHtmlAdapter = require('renaissance-append-html')
+const adapter = r.registerAdapter('appendHTML', AppendHtmlAdapter)
+
+adapter.appendHTML('<p>appendHTML</p>', document.getElementsByTagname('body')[0], function(children) { console.log(children) })
+// OR
+r.adapters.appendHTML.appendHTML('<p>appendHTML</p>', document.getElementsByTagname('body')[0], function(children) { console.log(children) })
+```
+
 ## API
 
 ### adapter.appendHTML({string} html, {object} node, {function} cb)
