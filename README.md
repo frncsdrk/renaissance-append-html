@@ -1,5 +1,7 @@
 # renaissance-append-html
 
+[![Test Status](https://github.com/frncsdrk/renaissance-append-html/workflows/test/badge.svg?branch)](https://github.com/frncsdrk/renaissance-append-html/actions)
+
 renaissance appendHTML adapter
 
 ## Usage
