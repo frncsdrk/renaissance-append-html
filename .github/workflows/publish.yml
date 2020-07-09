@@ -3,8 +3,7 @@ name: publish
 on:
   create:
     tags:
-      - 0.*
-      # NOTE: Update on major version change
+      - v*
 
 jobs:
   test:
