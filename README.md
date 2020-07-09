@@ -1,2 +1,3 @@
 # renaissance-append-html
-renaissance appendHTML drink
+
+renaissance appendHTML adapter
