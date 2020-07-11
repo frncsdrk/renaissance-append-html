@@ -26,6 +26,11 @@ Append `html` to `node` and run `cb`, if present
 
 - Install `rollup` globally with `npm i -g rollup`
 
+## Development
+
+- Build with `npm run build`
+- Test with `npm run test`
+
 ## Contributing
 
 See [CONTRIBUTING](https://github.com/frncsdrk/renaissance-append-html/blob/master/CONTRIBUTING.md)

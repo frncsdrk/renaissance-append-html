@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "src/Adapter.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAqB,CAAA,YAAA;AAAA;AAAA,MAAA,iBAAA;AACf,EAAA,iBAAA,GAAN,MAAA,iBAAA,CAAA;AACE,IAAA,WAAa,GAAA;AACX;AADW;;AAEb,IAAA,UAAY,CAAA,IAAA,EAAA,IAAA,EAAA,EAAA,EAAA;AACd,UAAA,KAAA,EAAA,QAAA,EAAA,IAAA,EAAA,CAAA,EAAA,GAAA,EAAA,OAAA;AAAI,MAAA,IAAA,GAAO,QAAQ,CAAR,aAAA,CAAA,KAAA,CAAP;AACA,MAAA,IAAI,CAAJ,SAAA,GAAiB,IAAjB;AACA,MAAA,QAAA,GAAW,IAAI,CAAC,QAAhB;;AAEA,UAAG,OAAA,EAAA,KAAH,UAAA,EAAA;AACE,QAAA,EAAA,CADF,QACE,CAAA;;;AAEF,MAAA,OAAA,GAAA,EAAA;;AAAA,WAAA,CAAA,GAAA,CAAA,EAAA,GAAA,GAAA,QAAA,CAAA,MAAA,EAAA,CAAA,GAAA,GAAA,EAAA,CAAA,EAAA,EAAA;;qBAAA,IAAI,CAAJ,WAAA,CAAA,KAAA,C;AAAA;;;AARU;;AAHd,GAAM;AAaN,EAAA,MAAM,CAAN,OAAA,GAAiB,iBAAjB;CAdqB,E,IAAA,C,IAAA",
+  "sourcesContent": [
+    "# append html adapter\nclass AppendHtmlAdapter\n  constructor: () ->\n    this\n  appendHTML: (html, node, cb) ->\n    elem = document.createElement(\"div\")\n    elem.innerHTML = html\n    children = elem.children\n\n    if typeof cb == \"function\"\n      cb(children)\n\n    node.appendChild(child) for child in children\n\nmodule.exports = AppendHtmlAdapter\n"
+  ],
+  "sourceRoot": ".."
+}

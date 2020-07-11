@@ -5,11 +5,12 @@
   "main": "dist/Adapter.cjs.js",
   "module": "dist/Adapter.es.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "build": "npm run build:compile",
+    "build:compile": "coffee -c -t -m -o dist/ src/",
     "test": "npm run test:raw | tap-spec",
-    "test:nyc": "nyc npm test",
-    "test:raw": "tape test/**/*.js"
+    "test:compile": "coffee -c -t -o test/js test/",
+    "test:nyc": "npm run test:compile && nyc npm test",
+    "test:raw": "npm run test:compile && tape test/js/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -28,14 +29,10 @@
   },
   "homepage": "https://github.com/frncsdrk/renaissance-append-html#readme",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^13.0.0",
-    "@rollup/plugin-node-resolve": "^7.0.0",
+    "coffeescript": "^2.5.1",
     "nyc": "^15.1.0",
-    "rollup": "^2.21.0",
+    "renaissance": "^0.6.8",
     "tap-spec": "^5.0.0",
     "tape": "^5.0.1"
-  },
-  "dependencies": {
-    "renaissance": "^0.6.8"
   }
 }
