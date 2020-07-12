@@ -2,8 +2,7 @@
   "name": "renaissance-append-html",
   "version": "0.2.0",
   "description": "renaissance append html adapter",
-  "main": "dist/Adapter.cjs.js",
-  "module": "dist/Adapter.es.js",
+  "main": "dist/Adapter.js",
   "scripts": {
     "build": "npm run build:compile",
     "build:compile": "coffee -c -t -m -o dist/ src/",
