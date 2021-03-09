@@ -22,10 +22,6 @@ r.adapters.appendHTML.appendHTML('<p>appendHTML</p>', document.getElementsByTagn
 
 Append `html` to `node` and run `cb`, if present
 
-## Setup
-
-- Install `rollup` globally with `npm i -g rollup`
-
 ## Development
 
 - Build with `npm run build`
