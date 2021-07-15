@@ -28,10 +28,10 @@
   },
   "homepage": "https://github.com/frncsdrk/renaissance-append-html#readme",
   "devDependencies": {
+    "@randomgoods/tap-spec": "^5.0.0",
     "coffeescript": "^2.5.1",
     "nyc": "^15.1.0",
-    "renaissance": "^0.6.13",
-    "tap-spec": "^5.0.0",
+    "renaissance": "^0.6.15",
     "tape": "^5.2.2"
   }
 }
