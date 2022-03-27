@@ -37,4 +37,4 @@ See [CREDITS](https://github.com/frncsdrk/renaissance-append-html/blob/master/CR
 
 ## License
 
-[MIT](https://github.com/frncsdrk/renaissance-append-html/blob/master/LICENSE) (c) 2017 - 2021 frncsdrk and contributors
+[MIT](https://github.com/frncsdrk/renaissance-append-html/blob/master/LICENSE) (c) 2017 - 2022 frncsdrk and contributors
