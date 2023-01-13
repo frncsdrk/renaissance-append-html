@@ -1,6 +1,6 @@
 {
   "name": "renaissance-append-html",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "renaissance append html adapter",
   "main": "dist/Adapter.js",
   "scripts": {
